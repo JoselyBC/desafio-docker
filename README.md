@@ -24,7 +24,7 @@ A estrutura básica do projeto é a seguinte:
 
 O código da aplicação Flask é o seguinte:
 
-```python
+
 from flask import Flask, jsonify, request
 import time
 import logging
