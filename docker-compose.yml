@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    image: my-app:tag  
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    command: gunicorn app:app --bind 0.0.0.0:5000
